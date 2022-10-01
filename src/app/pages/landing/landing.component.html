@@ -19,7 +19,10 @@
     <div class="buttons">
       <ion-button class="btn select-role-btn mentee-btn">Mentee</ion-button>
       <ion-button class="btn select-role-btn mentor-btn">Mentor</ion-button>
-      <ion-button class="btn get-started-btn" expand="full">Get Started</ion-button>
+      <ion-button
+        (click)="signUp()"
+        class="btn get-started-btn" 
+        expand="full">Get Started</ion-button>
     </div>
   </div>
 </ion-content>
