@@ -49,17 +49,6 @@
     justify-content: center;
 }
 
-.btn {
-    font-family: 'Play';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 37px;
-    text-align: center;
-    --background-activated: white;
-    --color-activated: var(--ion-color-primary);
-}
-
 .mentor-btn {
     margin-left: 1.5px;
 }
@@ -71,7 +60,6 @@
 .select-role-btn {
     width: 165px;
     height: 62px;
-    --border-radius: 0;
     background: linear-gradient(0deg, #0AA1DD, #0AA1DD), linear-gradient(0deg, #0AA1DD, #0AA1DD), #0AA1DD;
 }
 
@@ -79,7 +67,6 @@
     position: relative;
     top: 20%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    --border-radius: 3px;
     width: 196px;
     height: 60px;
     margin-left: auto;

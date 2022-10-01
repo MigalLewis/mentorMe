@@ -38,3 +38,16 @@ ion-content {
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* Buttons*/
+.btn {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    --background-activated: white;
+    --color-activated: var(--ion-color-primary);
+    --border-radius: 3px;
+}
