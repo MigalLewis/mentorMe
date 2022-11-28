@@ -49,26 +49,60 @@
     justify-content: center;
 }
 
-.mentor-btn {
-    margin-left: 1.5px;
+.buttons {
+    .radio {
+        display: inline-flex;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+        width: 330px;
+        height: 62px;
+        justify-content: space-evenly;
+      }
+      
+      input {
+        display: none;
+      }
+      
+      label {
+        padding: 8px 4px;
+        font-family: 'Play';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+        color: #E8F9FD;
+        text-align: center;
+        background: linear-gradient(0deg, 
+            var(--ion-color-primary), 
+            var(--ion-color-primary)), 
+            linear-gradient(0deg, 
+                var(--ion-color-primary), 
+                var(--ion-color-primary)), 
+                var(--ion-color-primary);
+        cursor: pointer;
+        transition: background .1s;
+        width: 100%;
+      }
+      
+      input:checked + label {
+        background: linear-gradient(0deg, #D9D9D9, #D9D9D9), 
+            linear-gradient(0deg, 
+                var(--ion-color-primary), 
+                var(--ion-color-primary)), 
+                var(--ion-color-primary);
+        color: var(--ion-color-primary);
+      }
+      
+
+      
+
+    .get-started-btn {
+        position: relative;
+        top: 20%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 196px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-.mentee-btn {
-    margin-right: 1.5px;
-}
-
-.select-role-btn {
-    width: 165px;
-    height: 62px;
-    background: linear-gradient(0deg, #0AA1DD, #0AA1DD), linear-gradient(0deg, #0AA1DD, #0AA1DD), #0AA1DD;
-}
-
-.get-started-btn {
-    position: relative;
-    top: 20%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 196px;
-    height: 60px;
-    margin-left: auto;
-    margin-right: auto;
-}

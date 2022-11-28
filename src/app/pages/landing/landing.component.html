@@ -17,8 +17,12 @@
         application</p>
     </ion-text>
     <div class="buttons">
-      <ion-button class="btn select-role-btn mentee-btn">Mentee</ion-button>
-      <ion-button class="btn select-role-btn mentor-btn">Mentor</ion-button>
+      <div class="radio">
+        <input type="radio" name="radio" id="mentee">
+        <label class="custom-radion-btn" for="mentee">Mentee</label>
+        <input type="radio" name="radio" id="mentor">
+        <label class="custom-radion-btn" for="mentor">Mentor</label>
+      </div>
       <ion-button
         (click)="signUp()"
         class="btn get-started-btn" 
