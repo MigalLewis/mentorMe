@@ -12,6 +12,7 @@ import { PhotoService } from 'src/app/services/photo.service';
 })
 export class UploadIdComponent implements OnInit {
   user: CustomizedUser;
+  imageInBase64: string;
 
   constructor(
     public photoService: PhotoService,
@@ -23,17 +24,7 @@ export class UploadIdComponent implements OnInit {
   }
 
   async selectImage() {
-    await this.photoService.selectPhoto();
-
-    if (!this.user.verificationStatus.uploadedFrontOfId) {
-      await this.photoService.uploadImage('idPhotoFront');
-      this.user.verificationStatus.uploadedFrontOfId = true;
-      this.router.navigate(['register', 'verify']);
-    } else if (!this.user.verificationStatus.uploadedBackOfId) {
-      await this.photoService.uploadImage('idPhotoBack');
-      this.user.verificationStatus.uploadedBackOfId = true;
-      this.router.navigate(['register', 'verify']);
-    }
+    this.imageInBase64 = await this.photoService.selectPhoto();
 
     // TODO: call service to upload user in db
   }

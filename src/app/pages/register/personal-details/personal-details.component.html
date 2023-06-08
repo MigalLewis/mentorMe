@@ -35,8 +35,8 @@
       <div class="input-item">
         <span class="label">Profile image: *</span>
         <div class="profile-pic" (click)="selectImage()">
-          <div *ngIf="photoService.uploadedPhotos.length > 0; else placeholder" class="image">
-            <ion-img [src]="photoService.uploadedPhotos[0].webviewPath" alt=""></ion-img>
+          <div *ngIf="imageInBase64; else placeholder" class="image">
+            <ion-img [src]="imageInBase64" alt=""></ion-img>
           </div>
           <ng-template #placeholder>
             <svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">

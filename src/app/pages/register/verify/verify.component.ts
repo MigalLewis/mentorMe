@@ -38,9 +38,6 @@ export class VerifyComponent implements OnInit {
   }
 
   async uploadSelfie() {
-    await this.photoService.selectPhoto();
-    this.photoService.uploadImage('selfie');
-    this.user.verificationStatus.uploadedSelfie = true;
   }
 
   initalizeUser() {

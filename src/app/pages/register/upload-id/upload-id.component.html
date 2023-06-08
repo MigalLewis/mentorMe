@@ -9,9 +9,7 @@
 
     <div class="take-img">
       <div class="frame">
-        <ion-img
-          *ngIf="photoService.uploadedPhotos.length > 0"
-          [src]="photoService.uploadedPhotos[0].webviewPath"></ion-img>
+        <ion-img *ngIf="imageInBase64" [src]="imageInBase64"></ion-img>
       </div>
     </div>
 
@@ -25,9 +23,7 @@
     </div>
 
     <ion-row class="next-btn">
-      <ion-button
-        (click)="selectImage()"
-        class="btn actions-btn">
+      <ion-button (click)="selectImage()" class="btn actions-btn">
         Next
       </ion-button>
     </ion-row>
